@@ -795,7 +795,7 @@ header .icons i{
     transform: scale(1.4);
   }
 
-/* ** Team section *** */
+/***************** Team section *****************/
 .team-section {
     /* position: relative;
     top: 150px; */
@@ -842,7 +842,7 @@ header .icons i{
 
 .team-section .image-section img {
 	width: 400px;
-	height: 430px;
+	height: 380px;
 	border-radius: 70px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 1); */
 }
