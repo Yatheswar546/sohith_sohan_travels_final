@@ -8,7 +8,8 @@
 
     <!-- Box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <!-- font awesome icons for location -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- magnific-popup css cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="./css/lightbox.css">
@@ -18,27 +19,25 @@
 <body>
     <!-- Nav Bar -->
     <div class="nav">
-
         <div class="top-bar">
-            <!-- <span>Contact Now : 8374178596</span> -->
-            <span class="logo-name">SohithSohan Tours & Travels Pvt. Ltd.</span>
             <ul>
-                <div class="gst">
-                    <li>GST NO. : 36ABJCS3364A1ZH</li>
-                    <li>CIN NO. : U60231TG20222PTC166413</li>
+                <li>GST NO. : 36ABJCS3364A1ZH</li>
+                <li>CIN NO. : U60231TG20222PTC166413</li>
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <li>Plot No. 449, Rainbow Meadows, Ameenpur, Hyderabad, Telangana</li>
                 </div>
-                <li><a href=""><i class='bx bxl-facebook'></i></a></li>
-                <li><a href=""><i class='bx bxl-instagram'></i></a></li>
-                <li><a href=""><i class='bx bxl-linkedin-square'></i></a></li>
+
             </ul>
         </div>
         <header>
             <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
+            <span class="logo-name">SohithSohan Tours And Travels Pvt. Ltd.</span>
             <input type="checkbox" id="menu">
             <label for="menu"><i class='bx bx-menu-alt-right'></i></label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#home">Home</a></li>
                     <li><a href="./index.html#about">About +</a>
                         <ul>
                             <li><a href="./index.html#about">Our Motto</a></li>
@@ -46,11 +45,16 @@
                             <li><a href="./index.html#about">Our Management</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./index.html#team">Directors</a></li>
                     <li><a href="./index.html#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100089221144773&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="https://instagram.com/sohithsohantravels?igshid=YmMyMTA2M2Y=" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="https://www.linkedin.com/in/sohithsohan-tours-and-travels-26a224260" target="_blank"><i class='bx bxl-linkedin-square'></i></a></li>
+            </div>
         </header>
     </div>
 
@@ -103,46 +107,75 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer" style="position: relative; top: 150px;">
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
+                    <h4>Our Team</h4>
+                    <ul>
+                        <li>ANJANEYULU MANDANAPALLI <br>
+                            [Managing Director]</li>
+                        <li>PREM AMBATI <br>
+                            [Managing Director]</li>
+                        <li>SANGEETHA T.V. <br>
+                            [Managing Director]</li>
+                        <li>AZHARUDDIN.SK <br>
+                            [Senior manager]</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>contact us</h4>
+                    <ul>
+                        <li>anjaneyulu.m@sohithsohantravels.com</li>
+                        <li>prem.ambati@sohithsohantravels.com</li>
+                        <li>sangeetha.tv@sohithsohantravels.com</li>
+                        <li>azhar@sohithsohantravels.com</li>
+                    </ul>
+                </div>
+                <!-- <div class="footer-col">
                     <h4>company</h4>
                     <ul>
                         <li><a href="#about">about us</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#">privacy</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="footer-col">
-                    <h4>Pages</h4>
+                    <h4>Quick Links</h4>
                     <ul>
+                        <li><a href="#">About Us</a></li>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="./gallery.html">gallery</a></li>
-                        <li><a href="./gallery.html">gallery</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <!-- <li><a href="#">Privacy Policy</a></li> -->
+                        <li><a href="#">Help</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>createo</h4>
+                    <h4>Services</h4>
                     <ul>
-                        <li><a href="./index.html">Gallery</a></li>
-                        <li><a href="./index.html">Contests</a></li>
-                        <li><a href="./index.html">Contests</a></li>
+                        <li><a href="./index.html">Corporate</a></li>
+                        <li><a href="./index.html">Real Estate</a></li>
+                        <li><a href="./index.html">Pharma</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>follow us</h4>
                     <div class="social-links">
-                        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
-                        <a href="#"><i class="bx bxl-instagram"></i></a>
-                        <a href="#"><i class="bx bxl-twitter"></i></a>
-                        <a href="#"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100089221144773&mibextid=ZbWKwL" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="https://instagram.com/sohithsohantravels?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bx bxl-instagram"></i></a>
+                        <!-- <a href="#"><i class="bx bxl-twitter"></i></a> -->
+                        <a href="https://www.linkedin.com/in/sohithsohan-tours-and-travels-26a224260" target="_blank"><i class="bx bxl-linkedin"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- copyright -->
+    <div class="copyright">
+        <p>© copright <b>SohithSohanTravels </b>| All Rights Reserved <br> Designed by <span style="color:#f81b20">Pravishree</span>
+        </p>
+    </div>
 
      <!-- Jquery -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
