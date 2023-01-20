@@ -800,8 +800,8 @@ header .icons i{
     /* position: relative;
     top: 150px; */
 	width: 100%;
-	min-height: 100vh;
-	background-color: #fff;
+	min-height: 215vh;
+	background-color: rgba(199, 198, 198, 0.537);
 }
 
 .team-section .container {
