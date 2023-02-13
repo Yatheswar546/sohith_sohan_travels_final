@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Hanken+Grotesk:wght@400;500;600;700&family=Poppins:wght@100;200;300&display=swap');
 *{
     margin: 0;
@@ -76,7 +75,7 @@ h6{
 }
 
 
-/* *** Nav Bar *** */
+/******************************* Nav Bar ***********************************/
 .nav{
     position: fixed;
     width: 100%;
@@ -155,7 +154,6 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    /* background-color: var(--super-light); */
     background-color: #111;
     box-shadow: 0 0 10px rgba(0,0,0,.7);
     padding: 20px 7%;
@@ -189,7 +187,7 @@ header .navbar ul li{
 }
 header .navbar ul li a{
     font-size: 17px;
-    padding: 20px;
+    padding: 16px;
     color: var(--super-light);
     text-decoration: none;
     display: block;
@@ -199,6 +197,7 @@ header .navbar ul li a{
 header .navbar ul li a:hover{
     background-color: var(--primary2-dark);
     color: var(--light);
+    border-radius: 10px;
 }
 header .navbar ul li ul{
     position: absolute;
@@ -239,6 +238,11 @@ header .icons i{
     border-radius: 50%;
     box-shadow: 0 0 5px #000;
     margin: 5px;
+}
+header .icons i:hover{
+    color: var(--primary-color);
+    background-color: var(--light);
+    cursor: pointer;
 }
 
 @media(max-width : 991px)
@@ -339,7 +343,7 @@ header .icons i{
 }
 
 
-/* Banner */
+/*************************************** Banner ***************************/
 .owl-carousel {
     width: 100%;
     height:100vh;
@@ -477,29 +481,31 @@ header .icons i{
     }
 }
 
-/* *** Our Partners *** */
+/***************************** Our Partners ************************************/
 .partners{
     justify-content: center;
     align-items: center;
     background-color: #ffff;
 }
 .partners h1{
-    font-size: 50px;
     margin: 0  0;
     text-align: center;
-    font-weight: 500;
+    font-weight: 800;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: 'Libre Baskerville', serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	color: #d12020;
 }
-
 .partners .company-name{
     font-size: 80px;
     text-align: center;
     padding-bottom: 30px;
 }
 
-
-/* ******************* 3 M's **********************/
+/********************************** About *************************************/
 .wrapper{
     display: flex;
     justify-content: center;
@@ -508,11 +514,11 @@ header .icons i{
     text-align: center;
 }
 .wrapper h1{
-    font-size: 70px;
-    margin: 0  0;
-    text-align: center;
-    font-weight: 500;
     font-family: 'Libre Baskerville', serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	color: #d12020;
 }
 .wrapper p{
     color: var(--dark);
@@ -557,36 +563,6 @@ header .icons i{
 .content-box .card p{
     color: var(--dark);
 }
-/* 
-.content-box .card:hover i{
-    color: var(--primary2-light);
-}
-.content-box .card:hover h2{
-    color: var(--light);
-}
-
-.content-box .card:hover p{
-    color: var(--light);
-}
-.content-box .card:first-child:hover{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/bg4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.content-box .card:last-child:hover{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/bg6.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.content-box .card:nth-child(2):hover{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/bg5.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
 @media(max-width: 991px){
     .wrapper{
         padding: 25px;
@@ -631,171 +607,7 @@ header .icons i{
     }
 }
 
-/*************** Pricing ****************************/
-.wrapper.pricing{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/bg4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-}
-.wrapper.pricing h1{
-    color: var(--light);
-    padding-top: 20px;
-}
-.pricing-table{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 70%;
-    margin: 10px auto;
-}
-.pricing-card{
-    flex: 1;
-    max-width: 360px;
-    background-color: var(--light);
-    margin: 20px 10px;
-    text-align: center;
-    cursor: pointer;
-    overflow: hidden;
-    color: var(--dark);
-    transition: .3s linear;
-}
-.pricing-card-header{
-    background-color:  var(--primary-color);
-    display: inline-block;
-    color: var(--light);
-    padding: 12px 30px;
-    border-radius: 0 0 20px 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: .4s linear;
-    font-size: 30px;
-}
-.pricing-card:hover .pricing-card-header{
-    box-shadow:0 0 0 26em var(--primary-color);
-    border-radius: 50px;
-}
-.price{
-    color: var(--primary-color);
-    margin: 40px 0;
-    transition: .2s linear;
-    font-size: 40px;
-}
-.price sup, .price span{
-    font-size: 15px;
-    font-weight: 700;
-}
-.pricing-card:hover .price,.pricing-card:hover{
-    color: var(--light);
-}
-.pricing-card li{
-    font-size: 16px;
-    padding: 10px 0;
-    text-transform: uppercase;
-}
-.pricing-card .order-btn{
-    display: inline-block;
-    margin-bottom: 40px;
-    margin-top: 80px;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    padding: 18px 40px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: .3s linear;
-}
-.pricing-card:hover .order-btn{
-    background-color: var(--primary-color);
-    color: var(--light);
-    border: 2px solid var(--super-light);
-}
-@media(max-width:1100px){
-    .pricing-card{
-        flex: 50%;
-    }
-}
-
-
-/************************* Gallery page **************************/
-/* portfolio */
-
-.portfolio{
-    box-sizing: border-box;
-    text-transform: capitalize;
-    transition:all .2s cubic-bezier(.34,1.12,.68,1.31);
-    /* background-color: var(--light); */
-    background-color: #222;
-    padding-bottom: 50px;
-  }
-  
-  
-  .gallery{
-    position: relative;
-    top:200px;
-    min-height: 100vh;
-    /* background:var(--light); */
-    background-color: #222;
-  }
-  
-  .gallery .controls{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:20px 0;
-    list-style: none;
-  }
-  
-  .gallery .controls .buttons{
-    height:40px;
-    width: 140px;
-    background:var(--super-light);
-    color:#666;
-    font-size: 20px;
-    line-height: 40px;
-    cursor: pointer;
-    margin:20px;
-    box-shadow: 0 3px 5px rgba(0,0,0,.3);
-    text-align: center;
-  }
-  
-  .gallery .controls .buttons.active{
-    background:var(--primary-color);
-    color:var(--super-light);
-  }
-  
-  .gallery .image-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .gallery .image-container .image{
-    height:250px;
-    width: 350px;
-    overflow: hidden;
-    border:15px solid var(--super-light);
-    box-shadow: 0 3px 5px rgba(0,0,0,.3);
-    margin: 20px;
-  }
-  
-  .gallery .image-container .image img{
-    height: 100%;
-    width:100%;
-    object-fit: cover;
-  }
-  
-  .gallery .image-container .image:hover img{
-    transform: scale(1.4);
-  }
-
-/***************** Team section *****************/
+/********************************* Team section *************************************/
 .team-section {
     /* position: relative;
     top: 150px; */
@@ -803,7 +615,6 @@ header .icons i{
 	min-height: 215vh;
 	background-color: #f2f2f2;
 }
-
 .team-section .container {
 	width: 80%;
 	display: block;
@@ -811,7 +622,6 @@ header .icons i{
 	padding: 100px;
 	padding-bottom: 200px;
 }
-
 .team-section .container2 {
 	width: 80%;
 	display: block;
@@ -844,7 +654,6 @@ header .icons i{
 	width: 400px;
 	height: 380px;
 	border-radius: 70px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 1); */
 }
 
 .team-section .title {
@@ -855,7 +664,7 @@ header .icons i{
 .team-section .title h1 {
 	font-family: 'Libre Baskerville', serif;
 	text-transform: uppercase;
-	font-size: 35px;
+	font-size: 40px;
 	text-align: center;
 	color: #d12020;
 }
@@ -878,20 +687,6 @@ header .icons i{
 .team-section .content-section .social {
 	margin: 40px 40px;
 }
-/* 
-header .icons{
-    display: flex;
-    margin-left: -10px;
-}
-header .icons i{
-    color: var(--light);
-    font-size: 25px;
-    padding: 5px;
-    background: var(--primary2-light);
-    border-radius: 50%;
-    box-shadow: 0 0 5px #000;
-    margin: 5px;
-} */
 .team-section .content-section .social{
     display: flex;
 }
@@ -993,7 +788,27 @@ header .icons i{
 	}
 }
 
-/************************ Contact ********************************/
+/**************************************** GALLERY ***************************************/
+.gallery-section{
+    position: relative;
+    width: 100%;
+    padding:40px 100px;
+    background-color: var(--light);
+}
+.gallery-section h1{
+    font-family: 'Libre Baskerville', serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+    padding-bottom: 40px;
+	color: #d12020;
+}
+.gallery-section img{
+    width: 400px;
+    height: 300px;
+}
+
+/***************************************** Contact *******************8***********************/
 .contactUs{
     position: relative;
     width: 100%;
@@ -1006,9 +821,14 @@ header .icons i{
     align-items:center;
     font-size:2em;
 }
-.contactUs .title h2{
-    color:var(--dark);
-    font-weight: 500;
+.contactUs .title h1{
+    font-family: 'Libre Baskerville', serif;
+	text-transform: uppercase;
+	font-size: 40px;
+    font-weight: 800;
+	text-align: center;
+    padding: 20px;
+	color: #d12020;
 }
 .contactUs .box{
     position: relative;
@@ -1087,11 +907,12 @@ header .icons i{
     background:var(--primary-color);
     color:var(--super-light);
     border:none;
-    font-size: 1.1em;
+    border-radius: 10px;
+    font-size: 22px;
     max-width: 120px;
     font-weight: 500;
     cursor:pointer;
-    padding:14px 15px;
+    padding:10px 13px;
 }
 .inputBox ::placeholder
 {
@@ -1188,21 +1009,19 @@ header .icons i{
 }
 
 
-  /* Footer */
+/******************************* Footer *******************************/
   
 .footer .row{
 	display: flex;
-    /* flex-wrap: wrap; */
 }
 .footer{
-    /* url(../images/bg1.jpg) */
     position: relative;
     top: 0px;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 70px 0;
+    padding: 30px 0;
 }
 .footer-col{
    width: 25%;
@@ -1256,16 +1075,19 @@ header .icons i{
 .footer-col .social-links{
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row-reverse; */
 }
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
+    font-size: 25px;
 	background-color: rgba(255, 255, 255, 0.2);
 	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	border-radius: 50%;
 	color: var(--super-light);
 	transition: all 0.5s ease;
@@ -1273,6 +1095,7 @@ header .icons i{
 .footer-col .social-links a:hover{
 	color: var(--light);
 	background-color: var(--primary-color);
+    cursor: pointer;
 }
 .copyright {
     position: relative;
@@ -1280,11 +1103,13 @@ header .icons i{
     width: 100%;
     height: 15vh;
     text-align: center;
-    background: #2f2b2b;
+    background: #242323;
     padding: 8px 100px;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .copyright p {
     color: #fff;
 }
@@ -1324,53 +1149,4 @@ header .icons i{
     display: grid;
     grid-template-columns: repeat(1,1fr);
 }
-
 }
-
-/* *** Our Partners *** 
-.partners{
-    justify-content: center;
-    align-items: center;
-    background-color: #ffff;
-}
-.partners h1{
-    font-size: 50px;
-    margin: 0  0;
-    text-align: center;
-    font-weight: 500;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.partners .company-name{
-    font-size: 80px;
-    text-align: center;
-}
-.partners .slider{
-    height: 100px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: auto;
-}
-.partners .slider .slide-track{
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250 * 8);
-}
-.partners .slider .slides{
-    height: 100px;
-    width: 250px;
-}
-.partners .slider .slides img{
-    height: 100%;
-    width: 150px;
-}
-@keyframes scroll{
-    0%{
-        transform: translateX(calc(250px * 4));
-    }
-    100%{
-        transform: translateX(calc(-250px * 4));
-    }
-} */
