@@ -392,6 +392,7 @@ header .icons i:hover{
     font-weight: 400;
     margin-bottom: 20px;
     line-height: 30px;
+    font-family: 'Libre Baskerville', serif;
     color: var(--light) !important;
 }
 
@@ -1021,7 +1022,7 @@ header .icons i:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30px 0;
+    padding: 10px 0;
 }
 .footer-col{
    width: 25%;
