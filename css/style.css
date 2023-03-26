@@ -156,7 +156,7 @@ header{
     right: 0;
     background-color: #111;
     box-shadow: 0 0 10px rgba(0,0,0,.7);
-    padding: 20px 7%;
+    padding: 20px 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -493,17 +493,27 @@ header .icons i:hover{
     text-align: center;
     font-weight: 800;
     padding-top: 20px;
-    padding-bottom: 20px;
+    margin-left: 80px;
     font-family: 'Libre Baskerville', serif;
 	text-transform: uppercase;
 	font-size: 40px;
 	text-align: center;
 	color: #d12020;
 }
+.partners .companies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 .partners .company-name{
     font-size: 80px;
     text-align: center;
     padding-bottom: 30px;
+}
+.partners .company-name img{
+    width: 200px;
+    height: 200px;
 }
 
 /********************************** About *************************************/
@@ -524,6 +534,9 @@ header .icons i:hover{
 .wrapper p{
     color: var(--dark);
     font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
 }
 .content-box{
     display: flex;
@@ -615,6 +628,7 @@ header .icons i:hover{
 	width: 100%;
 	min-height: 215vh;
 	background-color: #f2f2f2;
+    /* border: 1px solid black; */
 }
 .team-section .container {
 	width: 80%;
@@ -718,7 +732,15 @@ header .icons i:hover{
         left: 150px;
     }
 }
+@media screen and (max-width: 920px){
+    .team-section{
+        min-height: 130vh;
+    }
+}
 @media screen and (max-width: 850px){
+    .team-section{
+        min-height: 175vh;
+    }
     .team-section .container{
         margin-left: 10px;
     }
@@ -789,12 +811,145 @@ header .icons i:hover{
 	}
 }
 
+/************************************* SERVICES **************************************/
+.services{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.services h1{
+    font-family: 'Libre Baskerville', serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	color: #d12020;
+}
+.services p{
+    color: var(--dark);
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    padding: 7px 20px;
+    margin: 10px 25px;
+}
+.services .service-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px; 
+    padding-bottom: 30px;   
+}
+.services .service-box .card{
+    min-height: 300px;
+    width: calc(100% / 3 - 30px);
+    padding: 30px;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--super-light);
+    margin: 10px 4px;
+    /* box-shadow: 0 10px 30px rgba(0,0,0,.4); */
+    font-size: 17px;
+}
+.service-box .card i{
+    color: var(--primary-color);
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.service-box .card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+}
+.service-box .card p{
+    color: var(--dark);
+}
+.service-box .card ul li{
+    list-style: circle;
+    color: var(--dark);
+    font-size: 18px;
+    text-align: left;
+}
+@media(max-width: 991px){
+    .services{
+        padding: 25px;
+    }
+    .services h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .service-box{
+        width: 100%;
+        padding: 0;
+    }
+    .service-box .card{
+        min-width: 200px;
+        margin: 10px auto;
+        margin-right: 5px;
+    }
+}
+@media(max-width: 880px){
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 700px){
+    .services{
+        padding: 25px;
+    }
+    .services h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .service-box{
+        flex-direction: column;
+        width: 100%;
+        padding-left: 15px;
+    }
+    .service-box .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width:600px){
+    .services .service-box{
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:540px){
+    .services .service-box{
+        padding-left: 15px;
+    }
+}
+@media(max-width: 300px){
+    .service-box .card{
+        width: 100%;
+        min-width: 0;
+    }
+}
+
 /**************************************** GALLERY ***************************************/
 .gallery-section{
     position: relative;
     width: 100%;
     padding:40px 100px;
     background-color: var(--light);
+    /* border: 1px solid red; */
 }
 .gallery-section h1{
     font-family: 'Libre Baskerville', serif;
@@ -807,6 +962,33 @@ header .icons i:hover{
 .gallery-section img{
     width: 400px;
     height: 300px;
+}
+@media screen and (max-width:1030px) {
+    .gallery-section h1{
+        margin-right: 280px;
+    }
+}
+@media screen and (max-width: 980px){
+    .gallery-section img{
+        width: 100%;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 600px){
+    .gallery-section img{
+        width: 100%;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .gallery-section h1{
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width:480px) {
+    .gallery-section{
+        padding: 40px 20px;
+    }
 }
 
 /***************************************** Contact *******************8***********************/
@@ -892,16 +1074,18 @@ header .icons i:hover{
     padding:10px;
     font-size: 1.1em;
     outline:none;
+    font-family: 'Libre Baskerville', serif;
     border:1px solid var(--dark); 
 }
 .inputBox textarea{
     padding:10px;
     font-size: 1.1em;
     outline:none;
-    border:1px solid var(--dark); 
     resize:none;
     min-height:220px;
     margin-bottom:10px;
+    font-family: 'Libre Baskerville', serif;
+    border:1px solid var(--dark); 
 }
 .inputBox input[type="submit"]
 {
@@ -947,6 +1131,7 @@ header .icons i:hover{
 .info .infoBox div p{
     color:var(--super-light);
     font-size:1.1em;
+    width: 400px;
 }
 .info .infoBox div a{
     color:var(--super-light);
@@ -1055,6 +1240,7 @@ header .icons i:hover{
 	color: var(--super-light);
 	display: block;
 	transition: all 0.3s ease;
+    font-family: 'Libre Baskerville', serif;
 }
 .footer-col ul li:hover{
     color: var(--primary2-dark);
@@ -1068,6 +1254,7 @@ header .icons i:hover{
 	color: var(--super-light);
 	display: block;
 	transition: all 0.3s ease;
+    font-family: 'Libre Baskerville', serif;
 }
 .footer-col ul li a:hover{
 	color: var(--primary2-dark);
@@ -1150,4 +1337,265 @@ header .icons i:hover{
     display: grid;
     grid-template-columns: repeat(1,1fr);
 }
+}
+
+/***************** TEAMS PAGE SECTION ************************/
+.teams h1{
+    font-family: 'Libre Baskerville', serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	color: #d12020;
+    padding: 50px;
+}
+.teams .content-box .card{
+    background-color: #d6d5d5;
+}
+.teams .content-box .card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.teams .content-box .card h2{
+    padding: 8px;
+    margin-top: 7px;
+}
+.teams .content-box .card h4{
+    color: var(--dark);
+}
+.teams .content-box .card a{
+    color: var(--primary-color);
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.teams .content-box .card .popup .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+} 
+.teams .content-box .card .popup .content{
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 650px;
+    height: auto;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.teams .content-box .card .popup .content h2{
+    color: var(--primary-color);
+    text-align: left;
+    padding: 0;
+}
+.teams .content-box .card .popup .content h4{
+    color: var(--dark);
+    text-align: left;
+    font-weight: bold;
+}
+.teams .content-box .card .popup .content p{
+    text-align: justify;
+}
+.teams .content-box .card .popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.teams .content-box .card .popup.active .overlay{
+    display: block;
+}
+
+.teams .content-box .card .popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) ;
+}
+
+@media screen and (max-width: 1030px) {
+    .teams .content-box .card img{
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .teams .content-box .card .popup .content{
+        position: absolute;
+        top: 160%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background: #fff;
+        width: 550px;
+        height: auto;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    } 
+}
+@media screen and (max-width: 600px) {
+    .teams .content-box .card .popup .content{
+        position: absolute;
+        top: 160%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background: #fff;
+        width: 450px;
+        height: auto;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    } 
+}
+@media screen and (max-width: 490px) {
+    .teams .content-box .card .popup .content{
+        position: absolute;
+        top: 160%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background: #fff;
+        width: 350px;
+        height: auto;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    } 
+}
+@media screen and (max-width: 370px) {
+    .teams .content-box .card .popup .content{
+        position: absolute;
+        top: 160%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background: #fff;
+        width: 290px;
+        height: auto;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    } 
+}
+
+/********************* BOOKING SECTION *******************/
+.booking h1{
+    font-family: 'Libre Baskerville', serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	color: #d12020;
+    padding: 50px;
+    padding-bottom: 30px;
+}
+.booking .container{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.booking .container .content{
+    float: left;
+    width: 60%;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    /* border: 1px solid blue; */
+}
+.booking .container .image{
+    float: right;
+    width: 30%;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    position: relative;
+    top: -350px;
+    /* border: 1px solid green; */
+}
+.booking .container .image img{
+   width: 350px;
+   height: 700px;
+}
+.booking .container .content h5,h4,h3,p{
+    color: var(--dark);
+}
+.booking .container ul li span{
+    font-weight: bold;
+}
+.booking .container .content .booking-form{
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+.booking .container .content .booking-form h2{
+    font-family: 'Libre Baskerville', serif;
+	font-size: 30px;
+	text-align: center;
+	color: #d12020;
+    padding: 10px;
+}
+.booking .container .content .booking-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+}
+.booking .container .content .booking-form form div{
+    padding: 10px;
+}
+.booking .container .content .booking-form form label{
+    font-size: 20px;
+    color: var(--dark);
+}
+.booking .container .content .booking-form form input{
+    padding: 7px;
+    border-radius: 10px;
+}
+.booking .container .content .booking-form form .submit{
+    margin-top: 10px;
+}
+.booking .container .content .booking-form form .submit:hover{
+    background-color: var(--primary2-light);
+    color: var(--light);
+}
+@media screen  and (max-width:980px){
+    .booking .container{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .booking .container .content{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .booking .container .image{
+        float: none;
+        width: 100%;
+        position: relative;
+        top: 100%;
+    }
+    .booking .container .content .booking-form form{
+       width: 80%;
+    }
+    .booking .container .content .booking-form form textarea{
+        width: inherit;
+    }
 }
