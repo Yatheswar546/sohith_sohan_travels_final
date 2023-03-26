@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Hanken+Grotesk:wght@400;500;600;700&family=Poppins:wght@100;200;300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap'); */
 *{
     margin: 0;
     padding: 0;
@@ -109,11 +110,11 @@ h6{
     display: flex;
 }
 .top-bar li {
+    font-size: 15px;
     margin: 0px 5px;
     color: var(--light);
     font-family: 'Hanken Grotesk';
 }
-
 .top-bar i {
     color: var(--light);
     font-size: 25px;
@@ -122,7 +123,6 @@ h6{
     border-radius: 50%;
     box-shadow: 0 0 5px #000;
 }
-
 .top-bar i:hover {
     color: var(--primary-color);
     background-color: var(--light);
@@ -202,7 +202,7 @@ header .navbar ul li a:hover{
 header .navbar ul li ul{
     position: absolute;
     left: 0;
-    width: 200px;
+    width: 150px;
     background-color: var(--dark);
     display: none;
     box-shadow: 0 0 10px rgba(0,0,0,.4);
@@ -1354,20 +1354,26 @@ header .icons i:hover{
 .teams .content-box .card img{
     width: 300px;
     height: 300px;
-    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    /* border-bottom-left-radius: 20px; */
 }
 .teams .content-box .card h2{
     padding: 8px;
     margin-top: 7px;
+    font-size: 25px;
 }
 .teams .content-box .card h4{
-    color: var(--dark);
+    font-size: 20px;
+    color: #011268;
+    font-weight: 800;
 }
 .teams .content-box .card a{
     color: var(--primary-color);
     padding: 5px;
     font-size: 20px;
     cursor: pointer;
+    font-weight: bolder;
 }
 .teams .content-box .card .popup .overlay{
     position: fixed;
@@ -1396,14 +1402,17 @@ header .icons i:hover{
     color: var(--primary-color);
     text-align: left;
     padding: 0;
+    font-weight: bold;
 }
 .teams .content-box .card .popup .content h4{
-    color: var(--dark);
+    color: var(--primary2-dark);
     text-align: left;
     font-weight: bold;
+    color: #011268;
 }
 .teams .content-box .card .popup .content p{
     text-align: justify;
+    font-size: 18px;
 }
 .teams .content-box .card .popup .close-btn{
     cursor: pointer;
@@ -1510,16 +1519,19 @@ header .icons i:hover{
 .booking .container{
     display: flex;
     width: 100%;
+    position: relative;
+    top: -50px;
     /* border: 1px solid red; */
 }
 .booking .container .content{
     float: left;
-    width: 60%;
+    width: 70%;
     padding: 5px 10px;
     margin: 0px 10px;
     /* border: 1px solid blue; */
 }
 .booking .container .image{
+    display: block;
     float: right;
     width: 30%;
     padding: 5px 10px;
@@ -1529,48 +1541,51 @@ header .icons i:hover{
     /* border: 1px solid green; */
 }
 .booking .container .image img{
-   width: 350px;
-   height: 700px;
+   width: 550px;
+   height: 900px;
 }
 .booking .container .content h5,h4,h3,p{
+    font-size: 18px;
     color: var(--dark);
 }
 .booking .container ul li span{
     font-weight: bold;
 }
-.booking .container .content .booking-form{
+.booking .container .booking-form{
     padding: 10px;
+    width: 100%;
     /* border: 1px solid red; */
 }
-.booking .container .content .booking-form h2{
+.booking .container .booking-form h2{
     font-family: 'Libre Baskerville', serif;
 	font-size: 30px;
 	text-align: center;
 	color: #d12020;
     padding: 10px;
 }
-.booking .container .content .booking-form form{
+.booking .container .booking-form form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     /* border: 1px solid red; */
 }
-.booking .container .content .booking-form form div{
+.booking .container .booking-form form div{
     padding: 10px;
 }
-.booking .container .content .booking-form form label{
+.booking .container .booking-form form label{
     font-size: 20px;
     color: var(--dark);
 }
-.booking .container .content .booking-form form input{
+.booking .container .booking-form form input{
     padding: 7px;
+    margin-left: 10px;
     border-radius: 10px;
 }
-.booking .container .content .booking-form form .submit{
+.booking .container .booking-form form .submit{
     margin-top: 10px;
 }
-.booking .container .content .booking-form form .submit:hover{
+.booking .container .booking-form form .submit:hover{
     background-color: var(--primary2-light);
     color: var(--light);
 }
@@ -1592,10 +1607,10 @@ header .icons i:hover{
         position: relative;
         top: 100%;
     }
-    .booking .container .content .booking-form form{
+    .booking .container .booking-form form{
        width: 80%;
     }
-    .booking .container .content .booking-form form textarea{
+    .booking .container .booking-form form textarea{
         width: inherit;
     }
 }
