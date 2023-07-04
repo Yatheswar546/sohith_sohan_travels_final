@@ -71,9 +71,6 @@ function togglePopup3(){
 function togglePopup4(){
     document.getElementById("popup-4").classList.toggle("active");
 }
-function togglePopup5(){
-    document.getElementById("popup-5").classList.toggle("active");
-}
 function togglePopup6(){
     document.getElementById("popup-6").classList.toggle("active");
 }

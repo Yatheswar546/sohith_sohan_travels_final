@@ -512,7 +512,7 @@ header .icons i:hover{
     padding-bottom: 30px;
 }
 .partners .company-name img{
-    width: 200px;
+    width: 240px;
     height: 200px;
 }
 
@@ -1525,7 +1525,7 @@ header .icons i:hover{
 }
 .booking .container .content{
     float: left;
-    width: 70%;
+    width: 100%;
     padding: 5px 10px;
     margin: 0px 10px;
     /* border: 1px solid blue; */
@@ -1533,7 +1533,7 @@ header .icons i:hover{
 .booking .container .image{
     display: block;
     float: right;
-    width: 30%;
+    width: 50%;
     padding: 5px 10px;
     margin: 0px 10px;
     position: relative;
